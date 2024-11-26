@@ -42,30 +42,41 @@ const clock = setInterval(function(){
   },1000)
 
   //validazione numeri
+const bottone = document.getElementById('bottonz')
 
-  const testo = document.getElementById('inserimento')
-  const numero1 = document.getElementById('num1')
-  const numero2 = document.getElementById('num2')
-  const numero3 = document.getElementById('num3')
-  const numero4 = document.getElementById('num4')
-  const numero5 = document.getElementById('num5') 
-  
-  function validazione(){
-      
-      
-      const numeriInseriti = [
-          parseInt(numero1.value), 
-          parseInt(numero2.value), 
-          parseInt(numero3.value), 
-          parseInt(numero4.value), 
-          parseInt(numero5.value)];
+bottone.addEventListener('submit', =>(event){
 
+    event.preventDefault()
 
-    if (numeriInseriti.includes(numCaso)){
-        document.getElementById('vinto').innerHTML = 'Hai indovinato, che memoria!'
-    } else {
-        document.getElementById('vinto').innerHTML = 'Riprova!'
+    const testo = document.getElementById('inserimento')
+    const numero1 = document.getElementById('num1')
+    const numero2 = document.getElementById('num2')
+    const numero3 = document.getElementById('num3')
+    const numero4 = document.getElementById('num4')
+    const numero5 = document.getElementById('num5') 
+    
+    
+    
+    const numeriInseriti = [
+        parseInt(numero1.value), 
+        parseInt(numero2.value), 
+        parseInt(numero3.value), 
+        parseInt(numero4.value), 
+        parseInt(numero5.value)];
+        
+        
+    function validazione (array1, array2){
+      return array1.filter(number => array2.includes(number))
     }
-  }
+    
+    function reset (){
+    numero1.value = ''
+    numero2.value = ''
+    numero3.value = ''
+    numero4.value = ''
+    numero5.value = ''
+    }
 
-  
+    reset()
+
+})
