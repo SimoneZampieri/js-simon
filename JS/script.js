@@ -20,8 +20,9 @@ for (let i = 0; i < 5; i++){
     
 console.log(numCaso)
 
-//countdown
+document.getElementById('numerotti').innerHTML = numCaso.toString()
 
+//countdown
 let counter = 11;
 
 const clock = setInterval(function(){
@@ -34,6 +35,8 @@ const clock = setInterval(function(){
       clearInterval(clock)
       document.getElementById('seconds').classList.add('d-none')
       document.getElementById('bottonz').classList.toggle('d-none')
-      
+      document.getElementById('numerotti').classList.add('d-none')
+      document.getElementById('inserimento').classList.toggle('d-none')
+
     }
   },1000)
