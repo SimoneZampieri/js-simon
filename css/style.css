@@ -4,3 +4,11 @@
     box-sizing: border-box;
 }
 
+.container{
+    width: 900px;
+}
+
+#seconds{
+    font-size: 2rem;
+    font-weight: bold;
+}
