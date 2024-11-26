@@ -34,5 +34,6 @@ const clock = setInterval(function(){
       clearInterval(clock)
       document.getElementById('seconds').classList.add('d-none')
       document.getElementById('bottonz').classList.toggle('d-none')
+      
     }
   },1000)
