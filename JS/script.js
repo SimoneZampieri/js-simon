@@ -40,3 +40,19 @@ const clock = setInterval(function(){
 
     }
   },1000)
+
+  //validazione numeri
+
+  
+  function validazione(){
+
+    const testo = document.getElementById('caselle').value
+    
+    if (testo.includes(numCaso)){
+        document.getElementById('vinto').innerHTML = 'Hai indovinato, che memoria!'
+    } else {
+        document.getElementById('vinto').innerHTML = 'Riprova!'
+    }
+  }
+
+  

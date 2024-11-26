@@ -22,3 +22,7 @@ span{
 .input{
     width: 80px;
 }
+
+submit{
+    flex-wrap: wrap;
+}
