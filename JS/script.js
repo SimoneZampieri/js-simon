@@ -44,7 +44,7 @@ const clock = setInterval(function(){
   //validazione numeri
 const bottone = document.getElementById('bottonz')
 
-bottone.addEventListener('submit', =>(event){
+bottone.addEventListener('click', (event) => {
 
     event.preventDefault()
 
